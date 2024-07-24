@@ -1,9 +1,10 @@
 ---
 import Estado from "@/components/Estado.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Status from "@/components/Status.astro";
 
 const title = "Ana Pastor";
-const description = "Página de experiencia";
+const description = "Portfolio de Ana, esudiante de DAM desarrollador Web, desarrollador Backend";
 ---
 
 <BaseLayout title={title} description={description}>
@@ -11,18 +12,15 @@ const description = "Página de experiencia";
     <section class="personal-info">
       <div class="title">
         <h1>Ana Pastor</h1>
-        <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es"><Estado>Disponible para trabajar</Estado></a>
+        <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es"><Status>Disponible para trabajar</Status></a>
       </div>
       <div class="info">
       <p>
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit..."
+        Hola, soy Ana,<span class="info-bold"> técnico de Sistemas Microinformáticos y redes. </span>
+        De Jaén, España.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras pharetra
-        ante hendrerit sem malesuada porta.Donec quis enim ultrices, placerat
-        eros mattis, pretium urna.Mauris eget arcu molestie, lobortis neque in,
-        volutpat lacus.
+        Actualmente, estoy estudiando el Grado Superior de DAM (Desarrollo de Aplicaciones Multiplataforma).
       </p>
       <p>Puedes encontrarme</p>
     </div>
@@ -42,6 +40,11 @@ const description = "Página de experiencia";
         & p:not(:last-child){
             margin-bottom: 28px;
         }
+
+        & .info-bold{
+            color: #d2b9fd;
+        }
+
     }
   }
 

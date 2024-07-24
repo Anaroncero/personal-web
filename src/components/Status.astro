@@ -1,0 +1,32 @@
+<span class="container">
+  <span class="indicator"></span>
+  <slot />
+</span>
+
+<style>
+  .container {
+    font-family: var(--font-regular);
+    display: inline-flex;
+    align-items: center;
+    color: #d1fae5;
+    background-color: #065f46;
+    font-size: 0.85rem; /* 12px */
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 6px;
+    transform: var(--transition-config);
+
+    & .indicator {
+      width: 0.5rem; 
+      height: 0.5rem; 
+      margin-right: 0.50rem; 
+      background-color: #22c55e; 
+      border-radius: 9999px; 
+    }
+
+    &:hover {
+        background-color: #0d805c; 
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    }
+  }
+</style>
