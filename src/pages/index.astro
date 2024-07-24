@@ -1,65 +1,45 @@
 ---
-import Estado from "@/components/Estado.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Status from "@/components/Status.astro";
+import Section from "@/components/Section.astro";
 
 const title = "Ana Pastor";
-const description = "Portfolio de Ana, esudiante de DAM desarrollador Web, desarrollador Backend";
+const description =
+  "Portfolio de Ana, esudiante de DAM desarrollador Web, desarrollador Backend";
+const titleContent = "Ana Pastor Roncero";
 ---
 
 <BaseLayout title={title} description={description}>
   <main>
-    <section class="personal-info">
-      <div class="title">
-        <h1>Ana Pastor</h1>
-        <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es"><Status>Disponible para trabajar</Status></a>
-      </div>
+    <Section titleContent={titleContent}>
+      <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es"><Status>Disponible para trabajar</Status></a>
+    </Section>
       <div class="info">
-      <p>
-        Hola, soy Ana,<span class="info-bold"> técnico de Sistemas Microinformáticos y redes. </span>
-        De Jaén, España.
-      </p>
-      <p>
-        Actualmente, estoy estudiando el Grado Superior de DAM (Desarrollo de Aplicaciones Multiplataforma).
-      </p>
-      <p>Puedes encontrarme</p>
-    </div>
-    </section>
+        <p>
+          Hola, soy Ana,<span class="info-bold">
+            técnico de Sistemas Microinformáticos y redes.
+          </span>
+          De Jaén, España.
+        </p>
+        <p>
+          Actualmente, estoy estudiando el Grado Superior de DAM (Desarrollo de
+          Aplicaciones Multiplataforma).
+        </p>
+        <p>Puedes encontrarme</p>
+      </div>
   </main>
+
+  <style>
+    .info {
+      padding: 16px 0;
+
+      & p:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+      & .info-bold {
+        color: #d2b9fd;
+      }
+    }
+  </style>
 </BaseLayout>
-
-<style>
-  .personal-info {
-    font-family: var(--font-regular);
-    color: var(--font-color-lightest);
-    width: 100%;
-
-    & .info{
-        padding: 16px 0;
-
-        & p:not(:last-child){
-            margin-bottom: 28px;
-        }
-
-        & .info-bold{
-            color: #d2b9fd;
-        }
-
-    }
-  }
-
-  .title {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    justify-content: flex-start;
-    align-items: center;
-
-    & h1{
-        font-size: 40px;
-        font-family: var(--font-bold);
-        color: var(--font-color-lightest);
-    }
-  }
-  
-</style>
