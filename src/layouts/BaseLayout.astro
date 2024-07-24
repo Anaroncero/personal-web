@@ -1,0 +1,86 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import NavBar from "@/components/NavBar.astro";
+import Footer from "@/components/Footer.astro";
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="../../public/fonts/satoshi/satoshi.css" />
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="background">
+      <div class="portfolio">
+        <NavBar />
+        <slot />
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>
+<style is:global>
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    max-height: 100%;
+    width: 100%;
+    margin: 0; /* Asegura que no haya margen adicional */
+  }
+  
+  body {
+    --font-bold: "Satoshi-Bold";
+    --font-regular: "Satoshi-Regular";
+    
+    --font-color-lightest: #ffffff;
+    --font-color-light: #B1B1B1;
+    
+    --transition-config: all 0.15s ease;
+    
+    font-size: 16px;
+  }
+  
+  .background {
+    width: 100%;
+
+    background-color: hsla(210, 0%, 2%, 1);
+    background-image: radial-gradient(
+      at 15% 85%,
+      hsla(200, 15%, 5%, 1) 0px,
+      transparent 50%
+      ),
+      radial-gradient(
+        at 30% 20%,
+        hsla(140, 10%, 4%, 1) 0px,
+        transparent 50%
+        ),
+        radial-gradient(at 65% 70%, hsla(0, 0%, 3%, 1) 0px, transparent 50%),
+        radial-gradient(at 50% 10%, hsla(210, 5%, 2%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 5%, hsla(180, 5%, 6%, 1) 0px, transparent 50%),
+        radial-gradient(at 5% 60%, hsla(200, 20%, 4%, 1) 0px, transparent 50%),
+        radial-gradient(at 75% 40%, hsla(160, 0%, 3%, 1) 0px, transparent 50%),
+        radial-gradient(at 90% 95%, hsla(180, 0%, 0%, 1) 0px, transparent 50%);
+        min-height: 100vh; /* Asegura que el fondo cubra toda la altura del viewport */
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenedor principal */
+        align-items: center; /* Centra verticalmente el contenedor principal */
+      }
+      
+      .portfolio {
+        border: 1px solid white;
+        width: 920px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos hijos se apilen verticalmente */
+      }
+      </style>

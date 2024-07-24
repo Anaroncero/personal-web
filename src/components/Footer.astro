@@ -1,0 +1,113 @@
+---
+
+---
+
+<div class="socials">
+  <div class="socials-links">
+    <a
+      class="link"
+      href="https://github.com/search?q=miriadax%20html%20css%20y%20javascript&type=repositories"
+    >
+      <span class="text">GitHub</span>
+      <svg
+        class="arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right"
+      >
+        <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>
+      </svg>
+    </a>
+
+    <a
+      class="link"
+      href="https://www.google.com/search?q=linkedin&oq=link&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBggAEEUYPDIHCAEQABiABDIGCAIQRRg5MgcIAxAAGIAEMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGEHSAQgyMzMxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+    >
+      <span class="text">Linkedln</span>
+      <svg
+        class="arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right"
+      >
+        <path d="M7 7h10v10"></path><path d="M7 17 17 7"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="email">pastorronceroana@gmail.com</div>
+</div>
+
+<style>
+  .socials {
+    width: 100%; 
+    height: 4.375rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+
+
+    & .socials-links {
+      height: 3.125rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      
+      
+
+      & .link {
+        font-family: var(--font-regular);
+        text-decoration: none;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        gap:8px;
+
+        & .text {
+          color: var(--font-color-light);
+          transition: var(--transition-config);
+          font-family: var(--font-regular);
+        }
+
+        & .arrow {
+          fill: none;
+          stroke: var(--font-color-light);
+          transition: var(--transition-config);
+        }
+
+        &:hover {
+          .text {
+            color: var(--font-color-lightest);
+          }
+          .arrow {
+            stroke: var(--font-color-lightest);
+            transform: translateX(2px) translateY(-1px);
+          }
+        }
+      }
+    }
+    & .email {
+      width: 100%;
+      font-family: var(--font-regular);
+      height: 1.25rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: var(--font-color-lightest);
+    }
+  }
+</style>
