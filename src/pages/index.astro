@@ -1,9 +1,61 @@
 ---
+import Estado from "@/components/estado.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+
 const title = "Ana Pastor";
-const description = "Página de experiencia"
+const description = "Página de experiencia";
 ---
 
 <BaseLayout title={title} description={description}>
-<h1>Portfolio</h1>
+  <main>
+    <section class="personal-info">
+      <div class="title">
+        <h1>Ana Pastor</h1>
+        <Estado>Disponible para trabajar</Estado>
+      </div>
+      <div class="info">
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit..."
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras pharetra
+        ante hendrerit sem malesuada porta.Donec quis enim ultrices, placerat
+        eros mattis, pretium urna.Mauris eget arcu molestie, lobortis neque in,
+        volutpat lacus.
+      </p>
+      <p>Puedes encontrarme</p>
+    </div>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+  .personal-info {
+    width: 920px;
+
+    & .info{
+        padding: 16px 0;
+        background-color: rgb(197, 0, 0);
+
+        & p:not(:last-child){
+            margin-bottom: 28px;
+        }
+    }
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+
+    & h1{
+        font-size: 40px;
+        font-family: var(--font-bold);
+        color: var(--font-color-lightest);
+    }
+  }
+  
+</style>
