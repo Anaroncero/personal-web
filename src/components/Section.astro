@@ -2,16 +2,17 @@
 const { titleContent } = Astro.props;
 ---
 <section class="personal-info">
+
     <div class="title">
       <h1>{titleContent}</h1>
       <slot/>
       </a>
     </div>
+
 </section>
 
 
  <style>
-
 .personal-info {
       font-family: var(--font-regular);
       color: var(--font-color-lightest);
@@ -32,4 +33,5 @@ const { titleContent } = Astro.props;
         color: var(--font-color-lightest);
       }
     }
+    
 </style>

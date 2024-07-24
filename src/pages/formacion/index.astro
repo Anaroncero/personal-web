@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import Section from "@/components/Section.astro";
 const title = "Formación";
-const description = "Página de formación"
+const description = "Página de formación";
+const titleContent = "Formación"
 ---
 
 <BaseLayout title={title} description={description}>
-<h1>Formación</h1>
+  <Section titleContent={titleContent} />
 </BaseLayout>
