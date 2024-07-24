@@ -15,10 +15,14 @@ const { title, description } = Astro.props;
     <link rel="stylesheet" href="../../public/fonts/satoshi/satoshi.css" />
     <ViewTransitions />
   </head>
+
   <body>
-    <Header />
-    <slot />
-    <Footer></Footer>
+    <div class="background"></div>
+    <div class="content">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
   </body>
 </html>
 
@@ -34,13 +38,13 @@ const { title, description } = Astro.props;
 
   html {
     --font-bold: "Satoshi-Bold", system-ui, sans-serif;
-    --font-regular: "Satoshi-Regular", system-ui, sans-serif ;
+    --font-regular: "Satoshi-Regular", system-ui, sans-serif;
 
     --font-color-lightest: #ffffff;
     --font-color-light: #b1b1b1;
 
     --transition-config: all 0.15s ease;
-
+    /* 
     background-color: #050505;
     background-color: hsla(210, 0%, 2%, 1);
     background-image: radial-gradient(
@@ -55,11 +59,27 @@ const { title, description } = Astro.props;
       radial-gradient(at 5% 60%, hsla(200, 20%, 4%, 1) 0px, transparent 50%),
       radial-gradient(at 75% 40%, hsla(160, 0%, 3%, 1) 0px, transparent 50%),
       radial-gradient(at 90% 95%, hsla(180, 0%, 0%, 1) 0px, transparent 50%);
-    
+     */
   }
 
   body {
     font-size: 16px;
+  }
+
+  .background {
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1f1f1f;
+    background-image: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .content{
     display: flex;
     width: 920px;
     flex-direction: column;
