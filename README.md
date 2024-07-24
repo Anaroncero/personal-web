@@ -9,7 +9,7 @@ Resultado
 - [**Figma**](https://www.figma.com/) - Diseño.
 - [**Astro**](https://astro.build/) - Framework.
 - [**Lucide**](https://lucide.dev/) - Iconos.
-- [**Satoshi **](https://www.fontshare.com/) - Fuente.
+- [**Satoshi**](https://www.fontshare.com/) - Fuente.
 
 ## Proyecto
 
