@@ -20,7 +20,7 @@ Resultado
 - Tecnologías
 
 
-> ######Si te gusta el resultado puedes darle una estrella .⭐ ¡Gracias!
+> ###### Si te gusta el resultado puedes darle una estrella .⭐ ¡Gracias!
 
 
 ## 🌏 Deploy
@@ -33,9 +33,9 @@ Resultado
 ▪️ [**MIT License**](https://github.com/Anaroncero/portfolio-ana/blob/main/README.md).
 
 
-## Profiles
+## 💼 Profiles
 
-🟩 **linkedin**: [Ana Pastor Roncero](https://www.linkedin.com/in/ana-pastor-roncero/) 
+**linkedin**: [Ana Pastor Roncero](https://www.linkedin.com/in/ana-pastor-roncero/) 
 
 
 
