@@ -4,41 +4,40 @@ import Status from "@/components/Status.astro";
 import Section from "@/components/Section.astro";
 
 const title = "Ana Pastor";
-const description ="Portfolio de Ana, esudiante de DAM desarrollador Web, desarrollador Backend";
+const description ="Portfolio de Ana, estudiante de DAM desarrollador Web, desarrollador Backend";
 const titleContent = "Ana Pastor Roncero";
 ---
 
 <BaseLayout title={title} description={description}>
   <main>
     <Section titleContent={titleContent}>
-      <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es"><Status>Disponible para trabajar</Status></a>
+      <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es">
+        <Status>Disponible para trabajar</Status>
+      </a>
     </Section>
-      <div class="info">
-        <p>
-          Hola, soy Ana,<span class="info-bold">
-            técnico de Sistemas Microinformáticos y redes.
-          </span>
-          De Jaén, España.
-        </p>
-        <p>
-          Actualmente, estoy estudiando el Grado Superior de DAM (Desarrollo de
-          Aplicaciones Multiplataforma).
-        </p>
-        <p>Puedes encontrarme</p>
-      </div>
+    <div class="info">
+      <p>
+        Hola, soy Ana, <span class="info-bold">técnico de Sistemas Microinformáticos y redes.</span>
+        De Jaén, España.
+      </p>
+      <p>
+        Actualmente, estoy estudiando el Grado Superior de DAM (Desarrollo de Aplicaciones Multiplataforma).
+      </p>
+      <p>Puedes encontrarme</p>
+    </div>
   </main>
 
   <style>
     .info {
       padding: 16px 0;
+    }
 
-      & p:not(:last-child) {
-        margin-bottom: 28px;
-      }
+    .info p:not(:last-child) {
+      margin-bottom: 28px;
+    }
 
-      & .info-bold {
-        color: #d2b9fd;
-      }
+    .info .info-bold {
+      color: #d2b9fd;
     }
   </style>
 </BaseLayout>
