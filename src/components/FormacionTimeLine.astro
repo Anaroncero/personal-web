@@ -11,7 +11,7 @@
 
       <h3>MEDAC</h3>
       <p>DAM Desarrollo de aplicaciones multiplataforma</p>
-      <time datetime="2023-actually">2023 - Actualidad</time>
+      <time datetime="2023-actually">2023 - <span>Actualidad</span></time>
     </li>
 
     <li class="timeline-item-list">
@@ -60,6 +60,8 @@
     list-style: none;
     padding-left: 1rem;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .timeline-item-list h3{
@@ -83,6 +85,10 @@
     left: -30px;
     margin-top: 5px;
     
+  }
+
+  span{
+    color:#22c55e;
   }
 
   .logo {

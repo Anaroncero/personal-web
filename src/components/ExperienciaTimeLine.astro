@@ -1,90 +1,127 @@
+---
+import Status from "./Status.astro";
+---
+
 <section class="timeline-section">
-    <ul class="timeline">
-      <li class="timeline-item-list">
-        <div class="box-logo">
-          <img class="logo" src="/public/images/medac_logo.jpeg" alt="logo" />
-        </div>
-  
-        <h3>MEDAC</h3>
-        <p>DAM Desarrollo de aplicaciones multiplataforma</p>
-        <time datetime="2023-actually">2023 - Actualidad</time>
-      </li>
-  
-      <li class="timeline-item-list">
-        <div class="box-logo">
-          <img
-            class="logo"
-            src="/public/images/reyesdeespana_logo.png"
-            alt="logo"
-          />
-        </div>
-        <h3>IES Reyes de España</h3>
-        <p>Bachillerato</p>
-        <time datetime="2021-2023">2021 - 2023</time>
-        <!-- experiencia  <a href=""></a> -->
-      </li>
-  
-      <li class="timeline-item-list">
-        <div class="box-logo">
-          <img
-            class="logo"
-            src="/public/images/padresuarez_logo.jpg"
-            alt="logo"
-          />
-        </div>
-        <h3>IES Padre Suárez</h3>
-        <p>Sistemas Microinformáticos y Redes</p>
-        <time datetime="2023-actually">2019 - 2021</time>
-      </li>
-    </ul>
-  </section>
-  
-  <style>
-    section {
-      font-family: var(--font-regular);
-      padding: 16px 2rem;
-      font-size: 16px;
-      overflow-x: hidden;
+  <ul class="timeline">
+    <li class="timeline-item-list">
+      <div class="box-logo">
+        <img class="logo" src="/public/images/ja_logo.jpeg" alt="logo" />
+      </div>
+      <h3>Técnico informático</h3>
+      <span>Junta de Andalucía</span>
+      <time datetime="2021-2023">mar 2021 - jun 2021</time>
+      <span>Granada</span>
+      <p>
+        Montaje de equipos, instalación de sistemas operativos, configuración de
+        direcciones IP, repositorios y registros para la página web del Centro
+        de Documentación de la Junta de Andalucía.
+      </p>
+      <a href="https://es.linkedin.com/in/ana-pastor-roncero-600a57266"
+        >Mostrar mas
+        <svg class="arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-move-right"
+          ><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg
+        >
+      </a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  section {
+    font-family: var(--font-regular);
+    padding: 16px 2rem;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  .timeline {
+    border-left: 2px solid var(--font-color-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline-item-list {
+    list-style: none;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-item-list h3 {
+    font-family: var(--font-bold);
+  }
+
+  .timeline-item-list time {
+    font-family: var(--font-light);
+  }
+
+  .timeline-item-list span {
+    font-family: var(--font-light);
+  }
+
+  .timeline-item-list p {
+    margin-top: 1rem;
+    font-family: var(--font-regular);
+  }
+
+  .timeline-item-list a {
+    font-family: var(--font-regular);
+    border: 1px solid var(--font-color-light);
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: max-content;
+    border-radius: 8px;
+    color: var(--font-color-light);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition-config);
+
+    .arrow {
+      fill: none;
+      stroke: var(--font-color-light);
+      transition: var(--transition-config);
     }
-    .timeline {
-      border-left: 2px solid var(--font-color-light);
-      position: relative;
-      display: flex;
-      flex-direction: column;  
+
+    &:hover {
+      border: 1px solid var(--font-color-lightest);
+      color: var(--font-color-lightest);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+      .arrow{
+        stroke: var(--font-color-lightest);
+        transform: translateX(2px);
+      }
     }
-    .timeline-item-list {
-      list-style: none;
-      padding-left: 1rem;
-      padding-bottom: 4rem;
-    }
-  
-    .timeline-item-list h3{
-      font-family: var(--font-bold);
-    }
-  
-    .timeline-item-list p{
-      font-family: var(--font-regular);
-    }
-  
-    .timeline-item-list time{
-      font-family: var(--font-light);
-    }
-  
-    .box-logo {
-      height: 4rem;
-      width: 4rem;
-      background-color: rgb(255, 255, 255);
-      border-radius: 6px;
-      position: absolute;
-      left: -30px;
-      margin-top: 5px;
-      
-    }
-  
-    .logo {
-      height: 4rem;
-      width: auto;
-      border-radius: 6px;
-    }
-  </style>
-  
+  }
+
+  .box-logo {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    position: absolute;
+    left: -30px;
+    margin-top: 5px;
+  }
+
+  .logo {
+    height: 4rem;
+    width: auto;
+    border-radius: 6px;
+  }
+</style>
