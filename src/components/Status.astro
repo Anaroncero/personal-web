@@ -1,7 +1,8 @@
 ---
+const { href } = Astro.props;
 ---
 <span class="container">
-  <span class="indicator"></span>
+  <a href={href} class="indicator"></a>
   <slot />
 </span>
 
@@ -10,7 +11,6 @@
     font-size: 12px;
     font-family: var(--font-regular);
     height: 24px;
-    width: 170px;
     padding: 2px 10px;
     border-radius: 6px;
     display: inline-flex;
@@ -19,6 +19,7 @@
     color: #d1fae5;
     background-color: #065f46;
     transform: var(--transition-config);
+    white-space: nowrap;
    
 
     & .indicator {

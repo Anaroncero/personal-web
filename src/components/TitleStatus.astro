@@ -1,0 +1,34 @@
+---
+import Status from "./Status.astro";
+
+const { titleContent, statusText, url } = Astro.props;
+---
+<div class="personal-info">
+  <div class="title">
+    <h1>{titleContent}</h1>
+    <Status href={url}>{statusText}</Status>
+  </div>
+</div>
+
+<style>
+  .personal-info {
+    font-family: var(--font-regular);
+    color: var(--font-color-lightest);
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    font-family: var(--font-bold);
+    color: var(--font-color-lightest);
+  }
+</style>

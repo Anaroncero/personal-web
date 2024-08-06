@@ -1,10 +1,11 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import TitlePage from "@/components/TitlePage.astro";
 const title = "CV";
 const description = "Página donde se muestra el curriculum y se puede descargar";
+const titleContent = "CV";
 ---
 
-<BaseLayout title={title} decrription={description}>
-<h1>CV</h1>
-<p>https://www.youtube.com/watch?v=Zwh92LTB-Bk</p>
-</BaseLayout>
+<BaseLayout title={title} description={description}>
+    <TitlePage titleContent={titleContent} />
+  </BaseLayout>

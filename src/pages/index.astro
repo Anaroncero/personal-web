@@ -1,20 +1,15 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import Status from "@/components/Status.astro";
-import Section from "@/components/Section.astro";
+import TitleStatus from "@/components/TitleStatus.astro";
 
 const title = "Ana Pastor";
 const description ="Portfolio de Ana, estudiante de DAM desarrollador Web, desarrollador Backend";
-const titleContent = "Ana Pastor Roncero";
 ---
 
 <BaseLayout title={title} description={description}>
   <main>
-    <Section titleContent={titleContent}>
-      <a href="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es">
-        <Status>Disponible para trabajar</Status>
-      </a>
-    </Section>
+    <TitleStatus titleContent="Ana Pastor Roncero" statusText="Disponible para trabajar" url="https://www.linkedin.com/in/ana-pastor-roncero-600a57266/?originalSubdomain=es">
+    </TitleStatus>
     <div class="info">
       <p>
         Hola, soy Ana, <span class="info-bold">técnico de Sistemas Microinformáticos y redes.</span>
@@ -37,7 +32,7 @@ const titleContent = "Ana Pastor Roncero";
     }
 
     .info .info-bold {
-      color: #d2b9fd;
+      color: var(--font-color-important);
     }
   </style>
 </BaseLayout>
