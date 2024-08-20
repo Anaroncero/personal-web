@@ -31,7 +31,7 @@ Resultado
 
 ## 📃 License
 
-▪️ [**MIT License**](https://github.com/Anaroncero/prsonal-web/main/README.md).
+▪️ [**MIT License**].
 
 
 ## 💼 Profiles
