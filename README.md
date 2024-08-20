@@ -1,4 +1,4 @@
-# Personal Web
+nal# Personal Web
 
 Resultado
 <a href="https://personal-web-kohl.vercel.app/"><img href="jkasdjkasjdklsjdklsjdksajkdl" style="height: 50%; width:50%;"/></a>
@@ -31,7 +31,7 @@ Resultado
 
 ## 📃 License
 
-▪️ [**MIT License**](https://github.com/Anaroncero/portfolio-ana/blob/main/README.md).
+▪️ [**MIT License**](https://github.com/Anaroncero/prsonal-web/blob/main/README.md).
 
 
 ## 💼 Profiles
